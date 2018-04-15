@@ -1,70 +1,56 @@
-###################
-What is CodeIgniter
-###################
+Paystack Codeigniter was developed to show a sample way of implememting <a herf="http://paystack.com/">Paystack</a> API in Codeigniter PHP  framework
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+<h1>Usage</h1>
 
-*******************
-Release Information
-*******************
+Edit the public and secret key in application/config/constant.php
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
 
-**************************
-Changelog and New Features
-**************************
+<b> This demo contains both Paystack InLine And Standard Implementation . </b>
+  
+  It also make use of the Paystack Payment Verification Method to check and verify payment if its succesful or not .
+  
+  
+  
+ <h1> Here’s are some cards that work on our test environment.</h1>
+<br/><br/>
+No validation <br/>
+Card Number: 408 408 408 408 408 1 <br/>
+Expiry Date: any date in the future <br/>
+CVV: 408 <br/>
+<br/><br/>
+<b>PIN+OTP validation</b>
+<br/>(nonreusable)
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+Card Number: 5060 6666 6666 6666 666 (Verve)<br/>
+Expiry Date: any date in the future<br/>
+CVV: 123<br/>
+PIN: 1234<br/>
+OTP: 123456<br/>
+<br/><br/>
+<b>PIN only validation</b>
+<br/>(reusable)
+<br/><br/>
+Card Number: 5078 5078 5078 5078 12 (Verve)<br/>
+Expiry Date: any date in the future<br/>
+CVV: 081<br/>
+PIN: 1111<br/>
 
-*******************
-Server Requirements
-*******************
+<br/><br/>
+<b>PIN+PHONE+OTP validation</b><br/><br/>
+Card Number: 5078 5078 5078 5078 4 (Verve)<br/>
+Expiry Date: any date in the future<br/>
+CVV: 884<br/>
+PIN: 0000<br/>
 
-PHP version 5.6 or newer is recommended.
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+Phone: If less than 10 numeric characters, Transaction will fail.
+<br/> OTP: 123456
 
-************
-Installation
-************
+<br/><br/>
 
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
-
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community IRC <https://webchat.freenode.net/?channels=%23codeigniter>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+<b>Bank authorization Simulation</b><br/><br/>
+Card Number: 408 408 0000000 409<br/>
+Expiry Date: any date in the future<br/>
+CVV: 000<br/>
+  
+ 
