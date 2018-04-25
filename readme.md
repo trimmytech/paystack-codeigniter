@@ -7,9 +7,10 @@ Edit the public and secret key in application/config/constant.php
 <br/>
 This demo contains both Paystack InLine And Standard Implementation .<br/><br/>
 
-<br/>
+<br/><br/>
 It also make use of the Paystack Payment Verification Method to check and verify payment if its succesful or not .
 <br/>
+
 <b>Here’s are some cards that work on our test environment.</b>
 <br/><br/>
 
@@ -22,8 +23,9 @@ Expiry Date: any date in the future
 CVV: 408
 <br/>
 <b>PIN+OTP validation (nonreusable)</b>
+
 <br/>
-<b>Card Number: 5060 6666 6666 6666 666 (Verve) </b>
+Card Number: 5060 6666 6666 6666 666 (Verve)
 <br/>
 Expiry Date: any date in the future 
 <br/>
